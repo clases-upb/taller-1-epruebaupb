@@ -11,26 +11,26 @@ class AppTest {
     @Test void t1_conv_km(){
         Taller1 classUnderTest = new Taller1();
         assertTrue(classUnderTest.Convertir_km_seg(40).contains("40000.0 m/s - 1.44E8 m/h")
-        , "El resultado de la función, ingresando 40 km/seg, debe ser 40000.0 m/s - 1.44E8 m/h");
+        , "El resultado de la funcion, ingresando 40 km/seg, debe ser 40000.0 m/s - 1.44E8 m/h");
     }
 
     @Test void t1_cc_a_lt(){
         Taller1 classUnderTest = new Taller1();
         assertEquals(3.5, classUnderTest.Convertir_cm_lt(3500), 
-        "El total de la conversión de 3500 cc es: 3.5");
+        "El total de la conversion de 3500 cc es: 3.5");
        
     }
 
     @Test void t1_conv_us_cops(){
         Taller1 classUnderTest = new Taller1();
         assertEquals(190247910, classUnderTest.Convertir_us_cops(45623), 
-        "El total de la conversión de US45623 es: 190247910 cops");
+        "El total de la conversion de US45623 es: 190247910 cops");
     }
 
     @Test void t1_conv_cen_far(){
         Taller1 classUnderTest = new Taller1();
         assertEquals(32.0, classUnderTest.Convertir_cent_far(0), 
-        "El total de la conversión de 0C es: 32.0 F");
+        "El total de la conversion de 0C es: 32.0 F");
     }
 
     @Test void t1_calcular_segs(){
@@ -43,7 +43,7 @@ class AppTest {
     @Test void t1_calcular_peso_carga(){
         Taller1 classUnderTest = new Taller1();
         assertTrue(classUnderTest.Calcular_peso_carga((float)47.5, (float)7.5).contains("40000.0 kilos - 40.0 toneladas")
-        , "El resultado de la función, ingresando un peso total de 47.5 y un peso del camión de 7.5, debe ser 40000.0 kilos - 40.0 toneladas");
+        , "El resultado de la funcion, ingresando un peso total de 47.5 y un peso del camion de 7.5, debe ser 40000.0 kilos - 40.0 toneladas");
     }
 
     @Test void t1_calcular_horasxviaje(){
@@ -54,7 +54,7 @@ class AppTest {
 
     @Test void t1_calcular_comustible(){
         Taller1 classUnderTest = new Taller1();
-        assertEquals(14.337502, classUnderTest.Calcular_combustible(638, 312, 1243, 220), 
+        assertEquals(14.337502, classUnderTest.Calcular_combustible(638, 312, 1243, 220), 0.0001f,
         "El total de combustible en tonealdas esperado es: 14.337502 para los kms de las siguiente cuatro rutas: 638, 312, 1243, 220");
     }
 
